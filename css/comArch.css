@@ -1,0 +1,268 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 8, 2017, 2:54:18 AM
+    Author     : Maxbloodz
+*/
+.bounce-up {
+    opacity: 0;
+    -moz-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    /*-moz-transform: translate3d(0px, 200px, 0px);
+    -webkit-transform: translate3d(0px, 200px, 0px);
+    -o-transform: translate(0px, 200px);
+    -ms-transform: translate(0px, 200px);
+    transform: translate3d(0px, 200px, 0px);*/
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.bounce-up.in-view {
+    opacity: 1;
+    /*-moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);*/
+    /*position: fixed;
+    left: 0;
+    top: 50%;*/
+}
+
+.fade-in {
+    opacity: 0;
+    -moz-transition: all 700ms ease-out;
+    -webkit-transition: all 700ms ease-out;
+    -o-transition: all 700ms ease-out;
+    transition: all 700ms ease-out;
+    -moz-transform: translate3d(0px, 200px, 0px);
+    -webkit-transform: translate3d(0px, 200px, 0px);
+    -o-transform: translate(0px, 200px);
+    -ms-transform: translate(0px, 200px);
+    transform: translate3d(0px, 200px, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.fade-in.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+.animation-element {
+    position: relative;
+}
+
+#testimonial-slider2 {
+	margin: 0 0 3rem 0;
+	position: relative;
+}
+#testimonial-slider2 p {
+    
+	font-family: "supermarket", sans-serif;
+	font-size: 2.5rem;
+	line-height: 1.8;
+	color: white;
+}
+#testimonial-slider2 p::before, #testimonial-slider2 p::after {
+	display: inline;
+	font-family: Arial, sans-serif;
+	color: #c7c7c7;
+	font-size: 6rem;
+	line-height: 0;
+	vertical-align: bottom;
+	position: relative;
+	top: -1.2rem;
+}
+#testimonial-slider2 p::before {
+	margin-right: .5rem;
+	/*content: '\201C';*/
+}
+#testimonial-slider2 p::after {
+	margin-left: .5rem;
+	/*content: '\201D';*/
+}
+#testimonial-slider2 .testimonial-author img {
+	width: 8.2rem;
+	height: 8.2rem;
+	margin: 0 auto 1.2rem auto;
+	display: block;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 9px solid #EAEAED;
+}
+#testimonial-slider2 .testimonial-author .author-info {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "raleway-heavy", sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 3rem;
+	color: #252525;
+}
+#testimonial-slider2 .testimonial-author .author-info span {
+	display: block;
+	font-family: "raleway-semibold", sans-serif;
+	font-size: 1.4rem;
+	line-height: 2.1rem;
+	letter-spacing: 0;
+	text-transform: none;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media only screen and (max-width:1024px) {
+	#testimonials .flex-container {
+		max-width: 600px;
+	}
+	#testimonial-slider2 p {
+		font-size: 2.4rem;
+	}
+}
+@media only screen and (max-width:768px) {
+	#testimonials .flex-container {
+		width: 90%;
+	}
+	#testimonial-slider2 p {
+		font-size: 2.2rem;
+	}
+}
+@media only screen and (max-width:600px) {
+	#testimonials .flex-container {
+		width: 95%;
+	}
+	#testimonial-slider2 p {
+		font-size: 2rem;
+	}
+	#testimonial-slider2 p::before, #testimonial-slider2 p::after {
+		top: -0.5rem;
+	}
+}
+@media only screen and (max-width:400px) {
+	#testimonials .flex-container {
+		width: auto;
+	}
+	#testimonial-slider2 p {
+		font-size: 1.8rem;
+	}
+}
+
+#testimonial-slider3 {
+	margin: 0 0 3rem 0;
+	position: relative;
+}
+#testimonial-slider3 p {
+    
+	font-family: "supermarket", sans-serif;
+	font-size: 2.5rem;
+	line-height: 1.8;
+	color: white;
+}
+#testimonial-slider3 p::before, #testimonial-slider2 p::after {
+	display: inline;
+	font-family: Arial, sans-serif;
+	color: #c7c7c7;
+	font-size: 6rem;
+	line-height: 0;
+	vertical-align: bottom;
+	position: relative;
+	top: -1.2rem;
+}
+#testimonial-slider3 p::before {
+	margin-right: .5rem;
+	/*content: '\201C';*/
+}
+#testimonial-slider3 p::after {
+	margin-left: .5rem;
+	/*content: '\201D';*/
+}
+#testimonial-slider3 .testimonial-author img {
+	width: 8.2rem;
+	height: 8.2rem;
+	margin: 0 auto 1.2rem auto;
+	display: block;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 9px solid #EAEAED;
+}
+#testimonial-slider3 .testimonial-author .author-info {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "raleway-heavy", sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 3rem;
+	color: #252525;
+}
+#testimonial-slider3 .testimonial-author .author-info span {
+	display: block;
+	font-family: "raleway-semibold", sans-serif;
+	font-size: 1.4rem;
+	line-height: 2.1rem;
+	letter-spacing: 0;
+	text-transform: none;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media only screen and (max-width:1024px) {
+	#testimonials .flex-container {
+		max-width: 600px;
+	}
+	#testimonial-slider3 p {
+		font-size: 2.4rem;
+	}
+}
+@media only screen and (max-width:768px) {
+	#testimonials .flex-container {
+		width: 90%;
+	}
+	#testimonial-slider3 p {
+		font-size: 2.2rem;
+	}
+}
+@media only screen and (max-width:600px) {
+	#testimonials .flex-container {
+		width: 95%;
+	}
+	#testimonial-slider3 p {
+		font-size: 2rem;
+	}
+	#testimonial-slider3 p::before, #testimonial-slider2 p::after {
+		top: -0.5rem;
+	}
+}
+@media only screen and (max-width:400px) {
+	#testimonials .flex-container {
+		width: auto;
+	}
+	#testimonial-slider3 p {
+		font-size: 1.8rem;
+	}
+}
+
+.bg-dark {
+	background: #090909 url(../images/features-bg.jpg) no-repeat center !important; 
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	background-size: cover !important;
+	padding-top: 12rem !important;
+	padding-bottom: 12rem !important;
+	color: white !important;
+}
